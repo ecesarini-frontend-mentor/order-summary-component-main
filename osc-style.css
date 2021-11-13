@@ -1,0 +1,194 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+ :root {
+    --main-border-radius: 25px;
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --text-grey-color: hsl(240, 5%, 74%);
+}
+
+body {
+    box-sizing: content-box;
+    /*width: 100%; this causes not omgeneous left-right margin so it's commented*/
+    background-color: hsl(224, 70%, 80%);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body section .title {
+    font-weight: 900;
+}
+
+main {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+#order-container {
+    width: 100%;
+    max-width: 325px;
+    color: black;
+    background-color: white;
+    margin: 10vh auto;
+    border-radius: var(--main-border-radius);
+}
+
+#content-subcontainer {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.header-img {
+    width: 100%;
+    border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
+}
+
+.title h1 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.description p,
+#annual-plan-price {
+    font-weight: 500;
+    color: var(--text-grey-color);
+    margin: 0 5% 30px 5%;
+}
+
+.plan {
+    margin: auto 5%;
+    background-color: hsla(226, 9%, 72%, 0.151);
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.plan .plan-options {
+    display: block;
+    margin-left: 25px;
+}
+
+.plan .plan-change {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.plan .plan-change p a {
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+.plan .plan-change #plan-change-button {
+    margin-left: auto;
+    background-color: transparent;
+    color: var(--bright-blue);
+    font-weight: 700;
+    border: 0;
+}
+
+.plan .plan-change #plan-change-button:hover {
+    color: var(--text-grey-color);
+    background-color: var(--pale-blue);
+    /*border: 1px solid;*/
+    border-radius: 10px 10px;
+    cursor: pointer;
+}
+
+#plan-change-button:hover a {
+    text-decoration: none;
+}
+
+@media (max-width: 375px) {
+    .plan {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+        margin-bottom: 15px auto;
+    }
+    .plan img,
+    .plan .plan-options,
+    .plan .plan-change {
+        margin: 2px auto 0px auto;
+        padding: 0;
+    }
+    #music-icon {
+        width: 25%;
+    }
+    #annual-plan-title {
+        font-size: 2vh;
+        margin-bottom: 10px;
+    }
+    #annual-plan-price {
+        font-size: 1.7vh;
+    }
+    .plan .plan-change {
+        margin-top: 0;
+        text-align: start;
+    }
+    .plan-change p {
+        margin: 0 auto 10px auto;
+    }
+    .plan-change p a {
+        font-size: 1.8vh;
+    }
+}
+
+#annual-plan-title {
+    font-weight: 700;
+}
+
+.payment {
+    width: 90%;
+    max-width: 305px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.payment button {
+    display: block;
+    border: 0px;
+    border-radius: 10px 10px;
+    font-weight: 700;
+    min-height: 40px;
+    cursor: pointer;
+}
+
+#pay-order {
+    color: hsl(0, 0%, 100%);
+    background-color: var(--bright-blue);
+    box-shadow: 0px 15px 7px var(--pale-blue);
+    margin-bottom: 20px;
+}
+
+#cancel-order {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--text-grey-color);
+}
+
+#pay-order:hover,
+#cancel-order:hover {
+    background-color: var(--very-pale-blue);
+    color: var(--bright-blue);
+}
