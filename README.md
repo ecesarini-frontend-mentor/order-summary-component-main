@@ -33,7 +33,7 @@ Users should be able to:
 
 ## My process
 
-Tried to follow design example. Added **hover action** purpose of the challenge. Added also responsive actions using _@media query@_
+Tried to follow design example. Added **hover action** purpose of the challenge. Added also responsive actions using _@media query_
 
 ### Built with
 
