@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ecesarini/frontend-mentor/tree/main/order-summary-component-main)
+- Solution URL: [Add solution URL here](https://ecesarini-frontend-mentor.github.io/order-summary-component-main/)
 
 ## My process
 
