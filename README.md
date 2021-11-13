@@ -50,4 +50,4 @@ Use this section to recap over some of your major learnings while working throug
 
 ## Author
 
-- Frontend Mentor - [@ecesarini](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@ecesarini](https://www.frontendmentor.io/profile/ecesarini)
